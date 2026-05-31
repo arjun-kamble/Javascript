@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissor</title>
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="Game2.css">
 </head>
+
 <body>
-  <h1>Rock Paper Scissor </h1>
-  <div class="select_one">
-    <div class="photo">
-      <img src="rock.png" alt="Rock" id="rock" width="100" height="100">
-    </div>
 
-    <div class="photo">
-      <img src="paper.png" alt="Paper" id="paper" width="100" height="100">
-    </div>
+  <div class="bg-grid"></div>
 
-    <div class="photo">
-      <img src="scissors.png" alt="Scissor" id="scissor" width="100" height="100"> 
-  </div>
-</div>
-  <div class="score">
-    <div class="you">
-       <div id="user_score">0</div>
-       <h2>You</h2>
-    </div>
+  <div class="wrapper">
 
-    <div class="compter">
-      <div id="compter_score">0</div>
-      <h2> Comp</h2>
-    </div>
-    </div>
-    <div class="msg">
-    <div class="end">
-    <h2>Play Your Move</h2>
+    <header>
+      <h1>Rock<span>Paper</span>Scissors</h1>
+      <p class="tagline">Choose your weapon</p>
+    </header>
+
+    <section class="arena">
+      <!-- User side -->
+      <div class="side user-side">
+        <p class="side-label">You</p>
+        <div class="choice-display" id="user-display">
+          <span class="choice-emoji" id="user-emoji">❓</span>
+        </div>
       </div>
-</div>
-<script src="Game2.js"></script>
+
+      <!-- VS -->
+      <div class="vs-block">
+        <span>VS</span>
+      </div>
+
+      <!-- Computer side -->
+      <div class="side comp-side">
+        <p class="side-label">Computer</p>
+        <div class="choice-display" id="comp-display">
+          <span class="choice-emoji" id="comp-emoji">❓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result message -->
+    <div class="result-msg" id="result-msg">
+      <span id="msg-text">Pick a move to start!</span>
+    </div>
+
+    <!-- Scoreboard -->
+    <section class="scoreboard">
+      <div class="score-card">
+        <span class="score-num" id="user-score">0</span>
+        <span class="score-name">You</span>
+      </div>
+      <div class="score-divider">—</div>
+      <div class="score-card">
+        <span class="score-num" id="draw-score">0</span>
+        <span class="score-name">Draws</span>
+      </div>
+      <div class="score-divider">—</div>
+      <div class="score-card">
+        <span class="score-num" id="comp-score">0</span>
+        <span class="score-name">Computer</span>
+      </div>
+    </section>
+
+    <!-- Move buttons -->
+    <section class="moves">
+      <button class="move-btn" id="btn-rock" data-choice="rock">
+        <span class="move-emoji">🪨</span>
+        <span class="move-label">Rock</span>
+      </button>
+      <button class="move-btn" id="btn-paper" data-choice="paper">
+        <span class="move-emoji">📄</span>
+        <span class="move-label">Paper</span>
+      </button>
+      <button class="move-btn" id="btn-scissor" data-choice="scissor">
+        <span class="move-emoji">✂️</span>
+        <span class="move-label">Scissors</span>
+      </button>
+    </section>
+
+    <button class="reset-btn" id="reset-btn">↺ Reset Scores</button>
+
+  </div>
+
+  <script src="Game2.js"></script>
 </body>
+
 </html>
