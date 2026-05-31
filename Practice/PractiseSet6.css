@@ -1,0 +1,10 @@
+.a{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border: 2px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

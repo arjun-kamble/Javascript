@@ -1,0 +1,104 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  background-color: rgb(231, 6, 6);
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.select_one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 3rem;
+ 
+}
+.photo:hover{
+  cursor: pointer;
+  opacity: 0.5;
+background-color: black;
+border-radius: 50% ;
+}
+/* .second_photo:hover{  
+cursor: pointer;
+  opacity: 0.5;
+  background-color: black;
+border-radius: 50% ;
+} 
+.third_photo:hover{  
+  cursor: pointer;
+    opacity: 0.5;
+    background-color: black;
+border-radius: 50% ;
+  }  */
+  .photo{
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+   
+  }
+  #rock{
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+ }
+ #paper{
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ #scissor{
+    height: 200px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+ }
+.score h2{
+  font-size: 2rem;
+  margin: 20px;
+}
+.you{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+
+}
+.compter{
+   text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+
+}
+.end {
+  display: inline; 
+  color: white;
+  font-size: 1rem;
+   background-color: rgb(29, 22, 22);
+   margin-left: 700px;
+   padding: 1rem;
+   border-radius: 15px;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+}
+.end h2{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+.msg{
+  margin-top: 40px;
+} 

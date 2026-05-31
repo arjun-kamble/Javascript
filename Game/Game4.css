@@ -1,0 +1,65 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: #212121;
+  color: white;
+ transform: rotate(calc(30deg*var(--i)));
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+
+  position: relative;
+}
+.clock{
+  height: 400px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+  border: 1px solid white;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* rond shape */
+.clock span{
+  position: absolute;
+  transform: rotate(calc(30deg*var(--i)));
+  inset: 12px;
+  text-align: center;
+}
+
+/* tede ko sidha */
+.clock span b{
+   transform: rotate(calc(-30deg*var(--i)));
+   display: inline-block;
+   font-size: 30px; 
+} 
+.clock::before{
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.hand i{
+  position: absolute;
+  height: 90px;
+  width: 4px;
+  border-radius: 8px;
+  background-color: var(--clr);
+}
+.hand{
+  position: absolute;
+    display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
