@@ -1,44 +1,49 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-body{
+
+body {
   margin-top: 200px;
   margin-left: 300px;
-height: 90px;
-width: 100vh;
-display: flex;
- justify-content: center;
- align-items: center; 
-background: linear-gradient(45deg,#0a0a0a,#3a4452);
- }
-.calculator{
+  height: 90px;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator {
   height: 650px;
   margin-top: 250px;
   border: 1px solid #717377;
   padding: 20px;
   border-radius: 16px;
   background: transparent;
-  box-shadow:0px 3px 15px rgba(113, 115, 119, 0.5);
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
 }
-#inputBox{
+
+#inputBox {
   width: 350px;
   border: none;
   text-align: right;
-   background: transparent;
-  box-shadow:0px 3px 15px rgba(84, 84, 84, 0.1);
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
   margin: 10px;
-  padding:24px ;
+  padding: 24px;
   font-size: 40px;
   cursor: pointer;
   color: white;
 }
-input::placeholder{
+
+input::placeholder {
   color: white;
 }
-button{
-    border: none;
+
+button {
+  border: none;
   width: 90px;
   height: 90px;
   margin: 2px;
@@ -46,13 +51,15 @@ button{
   background: transparent;
   color: white;
   font-size: 20px;
- box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
- cursor: pointer;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
-.unique{
+
+.unique {
   color: green;
   font-size: 35px;
 }
-#unique2{
+
+#unique2 {
   background-color: orange;
 }
